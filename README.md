@@ -7,10 +7,10 @@ The goal was to classify wines as Good (1) or Bad (0) based on their chemical at
 ✔️ Data wrangling & cleaning
 ✔️ Feature engineering
 ✔️ Handling categorical variables (e.g., wine type)
-✔️ Stratified train/test split
 ✔️ Data scaling
+✔️ Stratified train/test split
 ✔️ Model training (Logistic Regression, KNN, Decision Tree)
-✔️ Hyperparameter tuning
+✔️ Addressing Class imbalance using SMOTE and class weight balance
 ✔️ Predictions & demonstration
 ✔️ Model evaluation (Accuracy, Precision, Recall, F1, ROC-AUC, Confusion Matrix)
 ✔️ Feature importance analysis
@@ -21,9 +21,9 @@ This repository contains all scripts, notebooks, and results used to analyze the
 The key preprocessing steps include:
 ✔️ Checking for missing values
 ✔️ Merging red & white datasets
-✔️ Creating a wine_type column (0 = red, 1 = white)
+✔️ Creating a wine_type column
 ✔️ Converting quality to binary quality_label
-✔️ Handling class imbalance via stratified sampling
+✔️ Handling class imbalance 
 
 The project utilizes two CSV files located in the root directory:
 * `winequality-white.csv`: which cantains 4898 instances and 11 features
@@ -43,6 +43,7 @@ Good baseline model
 ✔️K-Nearest Neighbors (KNN)
 Tested with multiple values of k
 Model performance evaluated after scaling
+SMOTE
 
 ✔️Decision Tree Classifier
 Tuned using GridSearchCV
